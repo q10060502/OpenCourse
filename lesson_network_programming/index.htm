@@ -1,0 +1,105 @@
+<html>
+<head>
+	<title>网络编程技术</title>
+	<meta charset="utf8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="expires" content="-1" />
+	<meta name="author" content="TangX" />
+	<meta name="keywords" content="学习, 计算机教育, 网络编程, 套接字编程, 网络安全编程, 服务端编程, C语言, select, tang, tang.chat, www.tang.chat, socket, network, program, c programming, code, coding, security, study, source code, vi" />
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+		body{
+			font-family: courier, Verdana, serif;
+		}
+		h1,h2,h3,h4,h5,h6 {
+			margin: 1em auto;
+			line-height: 2em;
+		}
+		li {
+			margin-left: 2em;
+		}
+		
+	</style>
+</head>
+<body>
+	<div style="display: none;">
+	</div>
+	<div style="margin: 1em auto; width: 90%;">
+		<div style="margin: 12px; float: left">
+			<div><a href="../index.htm">回到首页</a></div>
+			<h1>网络编程技术</h1>
+			<ul>
+				<li><a href="download/lesson_network_programming.beamer.pdf">理论课件</a></li>
+				<li><a href="download/lesson_network_programming_experiment_guide.pub.pdf">实验指导</a></li>
+				<li>编译软件
+					<ul>
+						<li><a href="../download/i686-7.3.0-release-win32-dwarf-rt_v5-rev0.7z">Mingw-w64 7.3.0</a></li>
+						<li><a href="../download/jdk_ri-7u75-b13-windows-i586-18_dec_2014.zip">JDK7</a></li>
+						<li><a href="../download/python-2.7.18.msi.zip">Python 2.7.18</a></li>
+					</ul>
+				</li>
+				<li>源码文件
+					<ul>
+						<li>构建文件： <a href="download/src/makefile">makefile</a>
+						<li>依赖文件： <a href="download/src/tx.h">tx.h</a>
+						<li>环境测试： <a href="download/src/hello.c">hello.c</a></li>
+						<li>语言基础： <a href="download/src/syntax_c.c">syntax_c.c</a></li>
+						<li>套接字库： <a href="download/src/socklib.c">socklib.c</a></li>
+						<li>错误处理： <a href="download/src/sock_err.c">sock_err.c</a></li>
+						<li>数据类型： 
+							<ul>
+								<li>套接字打开： <a href="download/src/sock_open.c">sock_open.c</a></li>
+								<li>套接字关闭： <a href="download/src/sock_close.c">sock_close.c</a></li>
+								<li>套接字地址： <a href="download/src/sock_addr.c">sockaddr.c</a></li>
+							</ul>
+						</li>
+						<li>字节顺序： <a href="download/src/byte_order.c">byte_order.c</a></li>
+						<li>地址转换： 
+							<ul>
+								<li>字符转为数值： <a href="download/src/inet_addr.c">inet_addr.c</a></li>
+								<li>数值转为字符： <a href="download/src/inet_ntoa.c">inet_ntoa.c</a></li>
+							</ul>
+						<li>网络信息： 
+							<ul>
+								<li>通过名称获取主机信息： <a href="download/src/gethostbyname.c">gethostbyname.c</a></li>
+								<li>通过地址获取主机信息： <a href="download/src/gethostbyaddr.c">gethostbyaddr.c</a></li>
+								<li>通过名称服务获取主机信息： <a href="download/src/getaddrinfo.c">getaddrinfo.c</a></li>
+								<li>通过地址获取主机服务信息： <a href="download/src/getnameinfo.c">getnameinfo.c</a></li>
+							</ul>
+						</li>
+						<li>数据回送TCP服务端： <a href="download/src/echo_tcpsrv.c">echo_tcpsrv.c</a></li>
+						<li>数据回送TCP客户端： <a href="download/src/echo_tcpcln.c">echo_tcpcln.c</a></li>
+						<li>字符时间TCP服务端： <a href="download/src/daytime_tcpsrv.c">daytime_tcpsrv.c</a></li>
+						<li>字符时间TCP客户端： <a href="download/src/daytime_tcpcln.c">daytime_tcpcln.c</a></li>
+						<li>数值时间TCP服务端： <a href="download/src/time_tcpsrv.c">time_tcpsrv.c</a></li>
+						<li>数值时间TCP客户端： <a href="download/src/time_tcpcln.c">time_tcpcln.c</a></li>
+						<li>数据回送HTTP服务端： <a href="download/src/echo_httpsrv.c">echo_httpsrv.c</a></li>
+						<li>静态网站HTTP服务端： <a href="download/src/httpsrv.c">httpsrv.c</a></li>
+						<li>数据回送multithread服务端： <a href="download/src/echo_multithread_tcpsrv.c">echo_multithread_tcpsrv.c</a></li>
+						<li>数据回送Select服务端： <a href="download/src/echo_select_tcpsrv.c">echo_select_tcpsrv.c</a></li>
+						<li>数据回送UDP服务端： <a href="download/src/echo_udpsrv.c">echo_udpsrv.c</a></li>
+						<li>数据回送UDP客户端： <a href="download/src/echo_udpcln.c">echo_udpcln.c</a></li>
+						<li>字符时间UDP服务端： <a href="download/src/daytime_udpsrv.c">daytime_udpsrv.c</a></li>
+						<li>字符时间UDP客户端： <a href="download/src/daytime_udpcln.c">daytime_udpcln.c</a></li>
+						<li>数值时间UDP服务端： <a href="download/src/time_udpsrv.c">time_udpsrv.c</a></li>
+						<li>数值时间UDP客户端： <a href="download/src/time_udpcln.c">time_udpcln.c</a></li>
+						<li>消息回送UDP服务端： <a href="download/src/msg_udpsrv.c">msg_udpsrv.c</a></li>
+						<li>消息回送UDP客户端： <a href="download/src/msg_udpcln.c">msg_udpcln.c</a></li>
+						<li>数据回送广播发送端： <a href="download/src/echo_broadcast_sender.c">echo_broadcast_sender.c</a></li>
+						<li>数据回送多播发送端： <a href="download/src/echo_multicast_sender.c">echo_multicast_sender.c</a></li>
+						<li>数据回送多播接收端： <a href="download/src/echo_multicast_recver.c">echo_multicast_recver.c</a></li>
+						<li>原始ICMP接收端： <a href="download/src/raw_icmp_recver.c">raw_icmp_recver.c</a></li>
+					</ul>
+				</li>
+				<li>程序文件： <a href="download/src/lesson_network_programming.zip">lesson_network_programming.zip</a></li>
+			</ul>
+			<!--<div>2019.10.18</div>-->
+		</div>
+	</div>
+</body>
+</html>

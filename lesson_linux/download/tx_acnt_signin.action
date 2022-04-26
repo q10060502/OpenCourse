@@ -1,0 +1,23 @@
+#!/bin/bash
+msg="<div>POST: $POST</div>"
+posts=$(echo "$POST"|tr '&' ' ')
+msg="$msg<div>posts: $posts</div>"
+for s in $posts; do
+	msg="$msg<div>$s</div>"
+	key=$(echo "$s"|cut -d '=' -f 1)
+	val=$(echo "$s"|cut -d '=' -f 2)
+	if test "$key" = "acnt_name"; then
+		acnt_name=$val
+	elif test "$key" = "acnt_pass"; then
+		acnt_pass=$val
+	fi
+done
+msg="$msg<div>acnt_name: $acnt_name</div>"
+msg="$msg<div>acnt_pass: $acnt_pass</div>"
+grep "^$acnt_name:$acnt_pass" tx_acnt.dat > /dev/null 2>&1
+if test $? -eq 0; then
+	msg="$msg<div>Login OK</div>"
+else
+	msg="$msg<div>Login Error: Not Existed</div>"
+fi
+echo $msg

@@ -1,0 +1,24 @@
+#!/bin/bash
+msg="<div>QUERY_STRING: $QUERY_STRING</div>"
+querys=$(echo "$QUERY_STRING"|tr '&' ' ')
+msg="$msg<div>querys: $querys</div>"
+for s in $querys; do
+	msg="$msg<div>$s</div>"
+	key=$(echo "$s"|cut -d '=' -f 1)
+	val=$(echo "$s"|cut -d '=' -f 2)
+	if test "$key" = "acnt_name"; then
+		acnt_name=$val
+	elif test "$key" = "acnt_pass"; then
+		acnt_pass=$val
+	fi
+done
+msg="$msg<div>acnt_name: $acnt_name</div>"
+msg="$msg<div>acnt_pass: $acnt_pass</div>"
+grep "^${acnt_name}:" tx_acnt.dat > /dev/null 2>&1
+if test $? -eq 0; then
+	msg="$msg<div>Signup Error: Already Existed</div>"
+else
+	echo "$acnt_name:$acnt_pass:$(date +%s)">>tx_acnt.dat
+	msg="$msg<div>Signup OK</div>"
+fi
+echo $msg

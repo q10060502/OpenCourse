@@ -1,0 +1,194 @@
+<html>
+<head>
+	<title>Linux操作系统</title>
+	<meta charset="utf8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="expires" content="-1" />
+	<meta name="author" content="TangX" />
+	<meta name="keywords" content="学习, 计算机教育, 网络编程, 套接字编程, 网络安全编程, 服务器编程, C语言, select, tang, tang.chat, www.tang.chat, socket, network, program, c programming, code, coding, security, study, source code, vi" />
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 12px;
+			line-height: 1.5em;
+		}
+		body{
+			font-family: courier, Verdana, serif;
+		}
+		h1,h2,h3,h4,h5,h6 {
+			margin: 1em auto;
+			line-height: 2em;
+		}
+		li {
+			margin-left: 2em;
+		}
+		
+	</style>
+</head>
+<body>
+	<div style="display: none;">
+	</div>
+	<div style="margin: 1em auto; width: 90%;">
+		<div style="margin: 1em; float: left">
+			<div><a href="../index.htm">回到首页</a></div>
+			<h1>Linux操作系统</h1>
+			<ul>
+				<li><a href="download/lesson_linux.beamer.pub.pdf">理论课件</a></li>
+				<li><a href="download/lesson_linux_experiment_guide.pub.pdf">实验指导</a></li>
+				<li>系统安装
+					<ul>
+					<li><a href="download/lesson_linux_install_debian_install_virtualbox.mp4">视频：安装VirtualBox</a></li>
+					<li><a href="download/lesson_linux_install_debian_create_virtualbox_project.mp4">视频：创建虚拟机器</a></li>
+					<li><a href="download/lesson_linux_install_debian_modify_virtualbox_project.mp4">视频：配置虚拟机器</a></li>
+					<li><a href="download/lesson_linux_install_debian_virtualbox_add_sata_disk.webm.mp4">视频：添加硬盘</a></li>
+					<li><a href="download/lesson_linux_install_debian_virtualbox_set_net_hostonly.webm.mp4">视频：配置网络</a></li>
+					<li><a href="download/lesson_linux_install_debian.mp4">视频：安装Debian系统</a></li>
+					<li><a href="../../download/VirtualBox-4.3.40-110317-Win.zip">软件：VirtualBox 4.3.40</a></li>
+					<li><a href="../../download/Oracle_VM_VirtualBox_Extension_Pack-4.3.40-110317a.vbox-extpack">软件：VirtualBox 4.3.40扩展包</a></li>
+					<li><a href="../../download/putty-0.74.zip">软件：putty 0.74</a></li>
+					</ul>
+				</li>
+				<li>系统桌面
+					<ul>
+					<li><a href="download/lesson_linux_desktop_gnome3_app_run_dashboard.webm.mp4">视频：运行桌面应用——使用“仪表面板”</a></li>
+					<li><a href="download/lesson_linux_desktop_gnome3_app_run_applications.webm.mp4">视频：运行桌面应用——使用“显示应用程序”</a></li>
+					<li><a href="download/lesson_linux_desktop_gnome3_app_run_searched.webm.mp4">视频：运行桌面应用——使用“搜索”</a></li>
+					<li><a href="download/lesson_linux_desktop_gnome3_app_run_shortkey.webm.mp4">视频：运行桌面应用——使用快捷键</a></li>
+					<li><a href="download/lesson_linux_desktop_gnome3_LibreOffice_Writer.webm.mp4">视频：办公套件——文字处理</a></li>
+					<li><a href="download/lesson_linux_desktop_gnome3_LibreOffice_Calc.webm.mp4">视频：办公套件——电子表格</a></li>
+					<li><a href="download/lesson_linux_desktop_gnome3_LibreOffice_Impress.webm.mp4">视频：办公套件——演示文稿</a></li>
+					<li><a href="download/lesson_linux_desktop_gnome3_nautilus_make_directory.webm.mp4">视频：文件管理——目录创建</a></li>
+					<li><a href="download/lesson_linux_desktop_gnome3_nautilus_rename_directory.webm.mp4">视频：文件管理——目录改名</a></li>
+					<li><a href="download/lesson_linux_desktop_gnome3_nautilus_remove_directory.webm.mp4">视频：文件管理——目录移除</a></li>
+					<li><a href="download/lesson_linux_desktop_gnome3_nautilus_clipboard.webm.mp4">视频：文件管理——复制、剪切、粘贴</a></li>
+					</ul>
+				</li>
+				<li>系统命令
+					<ul>
+						<li>文件命令
+							<ul>
+							<li><a href="download/lesson_linux_cmd_cat-more-less.webm.mp4">视频：文件内容</a></li>
+							<li><a href="download/lesson_linux_cmd_type_file.webm.mp4">视频：文件类型</a></li>
+							<li><a href="download/lesson_linux_cmd_stat.webm.mp4">视频：文件状态</a></li>
+							<li><a href="download/lesson_linux_cmd_chmod.webm.mp4">视频：文件模式</a></li>
+							<li><a href="download/lesson_linux_cmd_umask.webm.mp4">视频：模式掩码</a></li>
+							<li><a href="download/lesson_linux_cmd_chown-chgrp.webm.mp4">视频：文件所属</a></li>
+							<li><a href="download/lesson_linux_cmd_cp-mv.webm.mp4">视频：复制移动</a></li>
+							<li><a href="download/lesson_linux_cmd_gzip-tar.webm.mp4">视频：压缩打包</a></li>
+							<li><a href="download/lesson_linux_cmd_truncate-shred.webm.mp4">视频：截断碎粉</a></li>
+							<li><a href="download/lesson_linux_cmd_which-whereis-locate-find.webm.mp4">视频：查找定位</a></li>
+							<li><a href="download/lesson_linux_cmd_grep.webm.mp4">视频：正则查找</a></li>
+							<li><a href="download/lesson_linux_cmd_link-ln-unlink.webm.mp4">视频：链接文件</a></li>
+							<li><a href="download/lesson_linux_cmd_mkpipe.webm.mp4">视频：管道文件</a></li>
+							<li><a href="download/lesson_linux_cmd_redirect.webm.mp4">视频：重定向</a></li>
+							<li><a href="download/lesson_linux_cmd_head-tail-cut-colrm-uniq-strings-look.webm.mp4">视频：截取</a></li>
+							<li><a href="download/lesson_linux_cmd_sort.webm.mp4">视频：排序</a></li>
+							<li><a href="download/lesson_linux_cmd_wc.webm.mp4">视频：统计</a></li>
+							</ul>
+						</li>
+						<li>进程命令
+							<ul>
+							<li><a href="download/lesson_linux_cmd_ps.webm.mp4">视频：查看进程</a></li>
+							<li><a href="download/lesson_linux_cmd_top.webm.mp4">视频：监控进程</a></li>
+							<li><a href="download/lesson_linux_cmd_sleep-bg-fg-jobs.webm.mp4">视频：作业进程</a></li>
+							<li><a href="download/lesson_linux_cmd_nice-renice.webm.mp4">视频：调度进程</a></li>
+							<li><a href="download/lesson_linux_cmd_kill.webm.mp4">视频：关闭进程</a></li>
+							</ul>
+						</li>
+						<li>用户命令
+							<ul>
+							<li><a href="download/lesson_linux_cmd_adduser.webm.mp4">视频：添加用户</a></li>
+							<li><a href="download/lesson_linux_cmd_useradd.webm.mp4">视频：添加用户</a></li>
+							<li><a href="download/lesson_linux_cmd_addgroup-groupadd.webm.mp4">视频：添加群组</a></li>
+							<li><a href="download/lesson_linux_cmd_usermod.webm.mp4">视频：修改主要额外群组</a></li>
+							<li><a href="download/lesson_linux_cmd_gpasswd.webm.mp4">视频：群组添加删除用户</a></li>
+							<li><a href="download/lesson_linux_cmd_delgroup.webm.mp4">视频：删除群组</a></li>
+							<li><a href="download/lesson_linux_cmd_groupdel.webm.mp4">视频：删除群组</a></li>
+							<li><a href="download/lesson_linux_cmd_deluser-userdel.webm.mp4">视频：删除用户</a></li>
+							</ul>
+						</li>
+						<li>内存命令
+							<ul>
+							<li><a href="download/lesson_linux_cmd_free-mkswap-swapon-swapoff.webm.mp4">视频：交换分区</a></li>
+							<li><a href="download/lesson_linux_cmd_free-mkswap-swapon-swapoff-dd.webm.mp4">视频：交换文件</a></li>
+							</ul>
+						</li>
+						<li>磁盘命令
+							<ul>
+							<li><a href="download/lesson_linux_cmd_fdisk.webm.mp4">视频：分区工具</a></li>
+							</ul>
+						</li>
+						<li>网络命令
+							<ul>
+							<li><a href="download/lesson_linux_cmd_ifconfig.webm.mp4">视频：网络接口</a></li>
+							</ul>
+						</li>
+						<li>软件命令
+							<ul>
+							<li><a href="download/lesson_linux_cmd_apt.webm.mp4">视频：网络软件包管理工具</a></li>
+							</ul>
+						</li>
+						<li>命令程序
+							<ul>
+							<li><a href="download/lesson_linux_shell_read.webm.mp4">视频：内建命令——输入</a></li>
+							<li><a href="download/lesson_linux_shell_echo.webm.mp4">视频：内建命令——输出</a></li>
+							<li><a href="download/lesson_linux_shell_background.webm.mp4">视频：后台列表命令</a></li>
+							<li><a href="download/lesson_linux_shell_shortcurcuit.webm.mp4">视频：短路列表命令</a></li>
+							<li><a href="download/lesson_linux_shell_compound.webm.mp4">视频：分组命令</a></li>
+							<li><a href="download/lesson_linux_shell_if.webm.mp4">视频：流程控制——if</a></li>
+							<li><a href="download/lesson_linux_shell_case.webm.mp4">视频：流程控制——case</a></li>
+							<li><a href="download/lesson_linux_shell_for.webm.mp4">视频：流程控制——for</a></li>
+							<li><a href="download/lesson_linux_shell_while.webm.mp4">视频：流程控制——while</a></li>
+							<li><a href="download/lesson_linux_shell_function.webm.mp4">视频：函数</a></li>
+							<li><a href="download/lesson_linux_shell_variant_export.webm.mp4">视频：变量——设置</a></li>
+							<li><a href="download/lesson_linux_shell_variant_unset.webm.mp4">视频：变量——清除</a></li>
+							<li><a href="download/lesson_linux_shell_variant_PS.webm.mp4">视频：变量——提示字符</a></li>
+							<li><a href="download/lesson_linux_shell_option.webm.mp4">视频：选项</a></li>
+							<li><a href="download/lesson_linux_shell_quote.webm.mp4">视频：引用</a></li>
+							<li><a href="download/lesson_linux_shell_expansion_para.webm.mp4">视频：扩展——参数变量</a></li>
+							<li><a href="download/lesson_linux_shell_expansion_arithmetic.webm.mp4">视频：扩展——数学运算</a></li>
+							<li><a href="download/lesson_linux_shell_expansion_command.webm.mp4">视频：扩展——命令替换</a></li>
+							<li><a href="download/lesson_linux_shell_expansion_split.webm.mp4">视频：扩展——字段分隔</a></li>
+							<li><a href="download/lesson_linux_shell_expansion_pathname.webm.mp4">视频：扩展——路径名称</a></li>
+							<li><a href="download/lesson_linux_shell_script.webm.mp4">视频：脚本文件</a></li>
+							<li><a href="download/tx_srv.sh">源码：tx_srv.sh</a></li>
+							<li><a href="download/tx_srv.v0.1.sh">源码：tx_srv.v0.1.sh</a></li>
+							<li><a href="download/tx_srv.v0.2.sh">源码：tx_srv.v0.2.sh</a></li>
+							<li><a href="download/tx_srv.v0.3.sh">源码：tx_srv.v0.3.sh</a></li>
+							<li><a href="download/tx_srv_start.sh">源码：tx_srv_start.sh</a></li>
+							<li><a href="download/index.htm">源码：index.htm</a></li>
+							<li><a href="download/tx_acnt_signin.htm">源码：tx_acnt_signin.htm</a></li>
+							<li><a href="download/tx_acnt_signin.action">源码：tx_acnt_signin.action</a></li>
+							<li><a href="download/tx_acnt_signup.htm">源码：tx_acnt_signup.htm</a></li>
+							<li><a href="download/tx_acnt_signup.action">源码：tx_acnt_signup.action</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>系统应用
+					<ul>
+					<li><a href="download/lesson_linux_service_openssh_server_install.webm.mp4">视频：OpenSSH服务端安装</a></li>
+					<li><a href="download/lesson_linux_service_openssh_server_config.webm.mp4">视频：OpenSSH服务端配置</a></li>
+					<li><a href="download/lesson_linux_service_openssh_win7_putty.webm.mp4">视频：OpenSSH客户端登录（Windows7）</a></li>
+					<li><a href="download/lesson_linux_service_openssh_win7_pscp.webm.mp4">视频：OpenSSH远程文件复制（Windows7）</a></li>
+					<li><a href="download/lesson_linux_service_samba_server_config.webm.mp4">视频：Samba服务端配置</a></li>
+					<li><a href="download/lesson_linux_service_samba_server_install.webm.mp4">视频：Samba服务端安装</a></li>
+					<li><a href="download/lesson_linux_service_samba_server_smbpasswd-pdbedit.webm.mp4">视频：Samba服务端用户管理</a></li>
+					<li><a href="download/lesson_linux_service_samba_win7_anonymous.webm.mp4">视频：Samba客户端桌面访问（Windows7）</a></li>
+					<li><a href="download/lesson_linux_service_samba_win7_net.webm.mp4">视频：Samba客户端命令访问（Windows7）</a></li>
+					<li><a href="download/lesson_linux_service_nfs_server_config.webm.mp4">视频：NFS服务端配置</a></li>
+					<li><a href="download/lesson_linux_service_nfs_server_install.webm.mp4">视频：NFS服务端安装</a></li>
+					<li><a href="download/lesson_linux_service_nfs_win7_install.webm.mp4">视频：NFS客户端安装（Windows7）</a></li>
+					<li><a href="download/lesson_linux_service_nfs_win7_showmount-mount-umount.webm.mp4">视频：NFS客户端命令访问（Windows7）</a></li>
+					<li><a href="download/lesson_linux_service_apache_server_install.webm.mp4">视频：ApacheHTTP服务器安装</a></li>
+					<li><a href="download/lesson_linux_service_apache_server_site.webm.mp4">视频：ApacheHTTP服务器配置静态站点</a></li>
+					<li><a href="download/lesson_linux_service_apache_server_wsgi.webm.mp4">视频：ApacheHTTP服务器配置动态站点</a></li>
+					<li><a href="download/lesson_linux_service_apache_win7_browse.webm.mp4">视频：ApacheHTTP服务器客户端浏览（Windows7）</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

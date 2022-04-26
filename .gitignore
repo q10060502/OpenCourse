@@ -1,0 +1,9 @@
+/lesson_cyber_security/src/
+/lesson_information_security/src/
+/lesson_linux/src/
+/lesson_network_programming/src
+/lesson_asm/src
+/lesson_c/src
+/lesson_information_system_project_management
+*.swp
+git_init.sh
